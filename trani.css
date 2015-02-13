@@ -1,81 +1,81 @@
-[bani]{ /*base*/
+[trani]{ /*base*/
 	-webkit-animation-timing-function: ease;
 	-webkit-animation-fill-mode: both;
 	animation-timing-function: ease;
 	animation-fill-mode: both;
 }
 
-[bani~="3d"]{ /*style*/
+[trani~="3d"]{ /*style*/
 	-webkit-transform-style:preserve-3d;
 	transform-style:preserve-3d;
 }
 
-[bani~="1ds"]{ /*duration*/
+[trani~="1ds"]{ /*duration*/
 	-webkit-animation-duration: 100ms;
 	animation-duration: 100ms;
 }
 
-[bani~="2ds"]{ /*duration*/
+[trani~="2ds"]{ /*duration*/
 	-webkit-animation-duration: 200ms;
 	animation-duration: 200ms;
 }
 
-[bani~="3ds"]{ /*duration*/
+[trani~="3ds"]{ /*duration*/
 	-webkit-animation-duration: 300ms;
 	animation-duration: 300ms;
 }
 
-[bani~="4ds"]{ /*duration*/
+[trani~="4ds"]{ /*duration*/
 	-webkit-animation-duration: 400ms;
 	animation-duration: 400ms;
 }
 
-[bani~="5ds"]{ /*duration*/
+[trani~="5ds"]{ /*duration*/
 	-webkit-animation-duration: 500ms;
 	animation-duration: 500ms;
 }
 
-[bani~="unlimited"]{ /*count*/
+[trani~="unlimited"]{ /*count*/
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
 
-[bani~="alternate"]{ /*direction*/
+[trani~="alternate"]{ /*direction*/
 	-webkit-animation-direction: initial;
 	animation-direction: initial;
 }
 
-[bani~="reverse"]{ /*direction*/
+[trani~="reverse"]{ /*direction*/
 	-webkit-animation-direction: reverse;
 	animation-direction: reverse;
 }
 
-[bani~="running"]{ /*playState*/
+[trani~="running"]{ /*playState*/
 	-webkit-animation-play-state: running;
 	animation-play-state: running;
 }
 
-[bani~="paused"]{ /*playState*/
+[trani~="paused"]{ /*playState*/
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
 
-[bani~="up2down"]{ /*position*/
+[trani~="up2down"]{ /*position*/
 	-webkit-transform-origin: 50% 0%;
 	transform-origin: 50% 0%;
 }
 
-[bani~="down2up"]{ /*position*/
+[trani~="down2up"]{ /*position*/
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
 }
 
-[bani~="pluse"]{ /*function, can menu*/
-	-webkit-animation-name: bani-pluse;
-	animation-name: bani-pluse;
+[trani~="pluse"]{ /*function, can menu*/
+	-webkit-animation-name: trani-pluse;
+	animation-name: trani-pluse;
 }
 
-@-webkit-keyframes bani-pluse {
+@-webkit-keyframes trani-pluse {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0, 0);
@@ -85,7 +85,7 @@
 	}
 }
 
-@keyframes bani-pluse {
+@keyframes trani-pluse {
 	0% {
 		opacity: 0;
 		transform: scale(0, 0);
@@ -95,12 +95,12 @@
 	}
 }
 
-[bani~="pluse-half"]{ /*function, can window*/
-	-webkit-animation-name: bani-pluse-half;
-	animation-name: bani-pluse-half;
+[trani~="pluse-half"]{ /*function, can window*/
+	-webkit-animation-name: trani-pluse-half;
+	animation-name: trani-pluse-half;
 }
 
-@-webkit-keyframes bani-pluse-half {
+@-webkit-keyframes trani-pluse-half {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0.5, 0.5);
@@ -110,7 +110,7 @@
 	}
 }
 
-@keyframes bani-pluse-half {
+@keyframes trani-pluse-half {
 	0% {
 		opacity: 0;
 		transform: scale(0.5, 0.5);
@@ -120,133 +120,133 @@
 	}
 }
 
-[bani~="scale"]{ /*function, can tip*/
-	-webkit-animation-name: bani-scale;
-	animation-name: bani-scale;
+[trani~="scale"]{ /*function, can tip*/
+	-webkit-animation-name: trani-scale;
+	animation-name: trani-scale;
 }
 
-@-webkit-keyframes bani-scale {
+@-webkit-keyframes trani-scale {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0, 0);
 	}
 }
 
-@keyframes bani-scale {
+@keyframes trani-scale {
 	0% {
 		opacity: 0;
 		transform: scale(0, 0);
 	}
 }
 
-[bani~="scale-half"]{ /*function, can window*/
-	-webkit-animation-name: bani-scale-half;
-	animation-name: bani-scale-half;
+[trani~="scale-half"]{ /*function, can window*/
+	-webkit-animation-name: trani-scale-half;
+	animation-name: trani-scale-half;
 }
 
-@-webkit-keyframes bani-scale-half {
+@-webkit-keyframes trani-scale-half {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0.5, 0.5);
 	}
 }
 
-@keyframes bani-scale-half {
+@keyframes trani-scale-half {
 	0% {
 		opacity: 0;
 		transform: scale(0.5, 0.5);
 	}
 }
 
-[bani~="spring-y"]{ /*function, can selection*/
-	-webkit-animation-name: bani-spring-y;
-	animation-name: bani-spring-y;
+[trani~="spring-y"]{ /*function, can selection*/
+	-webkit-animation-name: trani-spring-y;
+	animation-name: trani-spring-y;
 }
 
-@-webkit-keyframes bani-spring-y {
+@-webkit-keyframes trani-spring-y {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(1, 0);
 	}
 }
 
-@keyframes bani-spring-y {
+@keyframes trani-spring-y {
 	0% {
 		opacity: 0;
 		transform: scale(1, 0);
 	}
 }
 
-[bani~="spring-x"]{ /*function, can selection*/
-	-webkit-animation-name: bani-spring-x;
-	animation-name: bani-spring-x;
+[trani~="spring-x"]{ /*function, can selection*/
+	-webkit-animation-name: trani-spring-x;
+	animation-name: trani-spring-x;
 }
 
-@-webkit-keyframes bani-spring-x {
+@-webkit-keyframes trani-spring-x {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0, 1);
 	}
 }
 
-@keyframes bani-spring-x {
+@keyframes trani-spring-x {
 	0% {
 		opacity: 0;
 		transform: scale(0, 1);
 	}
 }
 
-[bani~="mov-left"]{ /*function, can element*/
-	-webkit-animation-name: bani-mov-left;
-	animation-name: bani-mov-left;
+[trani~="mov-left"]{ /*function, can element*/
+	-webkit-animation-name: trani-mov-left;
+	animation-name: trani-mov-left;
 }
 
-@-webkit-keyframes bani-mov-left {
+@-webkit-keyframes trani-mov-left {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateX(-100%);
 	}
 }
 
-@keyframes bani-mov-left {
+@keyframes trani-mov-left {
 	0% {
 		opacity: 0;
 		transform: translateX(-100%);
 	}
 }
 
-[bani~="mov-right"]{ /*function, can element*/
-	-webkit-animation-name: bani-mov-right;
-	animation-name: bani-mov-right;
+[trani~="mov-right"]{ /*function, can element*/
+	-webkit-animation-name: trani-mov-right;
+	animation-name: trani-mov-right;
 }
 
-@-webkit-keyframes bani-mov-right {
+@-webkit-keyframes trani-mov-right {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateX(100%);
 	}
 }
 
-@keyframes bani-mov-right {
+@keyframes trani-mov-right {
 	0% {
 		opacity: 0;
 		transform: translateX(100%);
 	}
 }
 
-[bani~="mov-down"]{ /*function, can header & menu*/
-	-webkit-animation-name: bani-mov-down;
-	animation-name: bani-mov-down;
+[trani~="mov-down"]{ /*function, can header & menu*/
+	-webkit-animation-name: trani-mov-down;
+	animation-name: trani-mov-down;
 }
 
-@-webkit-keyframes bani-mov-down {
+@-webkit-keyframes trani-mov-down {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(-50%);
 	}
 }
 
-@keyframes bani-mov-down {
+@keyframes trani-mov-down {
 	0% {
 		opacity: 0;
 		transform: translateY(-50%);
