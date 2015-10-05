@@ -10,72 +10,47 @@
 	transform-style:preserve-3d;
 }
 
-[trani~="1ds"]{ /*duration*/
-	-webkit-animation-duration: 100ms;
-	animation-duration: 100ms;
-}
-
-[trani~="2ds"]{ /*duration*/
-	-webkit-animation-duration: 200ms;
-	animation-duration: 200ms;
-}
-
-[trani~="3ds"]{ /*duration*/
-	-webkit-animation-duration: 300ms;
-	animation-duration: 300ms;
-}
-
-[trani~="4ds"]{ /*duration*/
-	-webkit-animation-duration: 400ms;
-	animation-duration: 400ms;
-}
-
-[trani~="5ds"]{ /*duration*/
-	-webkit-animation-duration: 500ms;
-	animation-duration: 500ms;
-}
-
-[trani~="unlimited"]{ /*count*/
+[trani~="c-unlimited"]{ /*count*/
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
 
-[trani~="alternate"]{ /*direction*/
+[trani~="d-alternate"]{ /*direction*/
 	-webkit-animation-direction: initial;
 	animation-direction: initial;
 }
 
-[trani~="reverse"]{ /*direction*/
+[trani~="d-reverse"]{ /*direction*/
 	-webkit-animation-direction: reverse;
 	animation-direction: reverse;
 }
 
-[trani~="running"]{ /*playState*/
+[trani~="s-running"]{ /*playState*/
 	-webkit-animation-play-state: running;
 	animation-play-state: running;
 }
 
-[trani~="paused"]{ /*playState*/
+[trani~="s-paused"]{ /*playState*/
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
 
-[trani~="up2down"]{ /*position*/
+[trani~="o-top"]{ /*origin*/
 	-webkit-transform-origin: 50% 0%;
 	transform-origin: 50% 0%;
 }
 
-[trani~="down2up"]{ /*position*/
+[trani~="o-bottom"]{ /*origin*/
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
 }
 
-[trani~="pluse"]{ /*function, can menu*/
-	-webkit-animation-name: trani-pluse;
-	animation-name: trani-pluse;
+[trani~="f-drop"]{ /*function, can menu*/
+	-webkit-animation-name: trani-drop;
+	animation-name: trani-drop;
 }
 
-@-webkit-keyframes trani-pluse {
+@-webkit-keyframes trani-drop {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0, 0);
@@ -85,7 +60,7 @@
 	}
 }
 
-@keyframes trani-pluse {
+@keyframes trani-drop {
 	0% {
 		opacity: 0;
 		transform: scale(0, 0);
@@ -95,12 +70,12 @@
 	}
 }
 
-[trani~="pluse-half"]{ /*function, can window*/
-	-webkit-animation-name: trani-pluse-half;
-	animation-name: trani-pluse-half;
+[trani~="f-drop-half"]{ /*function, can window*/
+	-webkit-animation-name: trani-drop-half;
+	animation-name: trani-drop-half;
 }
 
-@-webkit-keyframes trani-pluse-half {
+@-webkit-keyframes trani-drop-half {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0.5, 0.5);
@@ -110,7 +85,7 @@
 	}
 }
 
-@keyframes trani-pluse-half {
+@keyframes trani-drop-half {
 	0% {
 		opacity: 0;
 		transform: scale(0.5, 0.5);
@@ -120,7 +95,7 @@
 	}
 }
 
-[trani~="scale"]{ /*function, can tip*/
+[trani~="f-scale"]{ /*function, can tip*/
 	-webkit-animation-name: trani-scale;
 	animation-name: trani-scale;
 }
@@ -139,7 +114,7 @@
 	}
 }
 
-[trani~="scale-half"]{ /*function, can window*/
+[trani~="f-scale-half"]{ /*function, can window*/
 	-webkit-animation-name: trani-scale-half;
 	animation-name: trani-scale-half;
 }
@@ -158,97 +133,133 @@
 	}
 }
 
-[trani~="spring-y"]{ /*function, can selection*/
-	-webkit-animation-name: trani-spring-y;
-	animation-name: trani-spring-y;
+[trani~="f-flip-y"]{ /*function, can selection*/
+	-webkit-animation-name: trani-flip-y;
+	animation-name: trani-flip-y;
 }
 
-@-webkit-keyframes trani-spring-y {
+@-webkit-keyframes trani-flip-y {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(1, 0);
 	}
 }
 
-@keyframes trani-spring-y {
+@keyframes trani-flip-y {
 	0% {
 		opacity: 0;
 		transform: scale(1, 0);
 	}
 }
 
-[trani~="spring-x"]{ /*function, can selection*/
-	-webkit-animation-name: trani-spring-x;
-	animation-name: trani-spring-x;
+[trani~="f-flip-x"]{ /*function, can selection*/
+	-webkit-animation-name: trani-flip-x;
+	animation-name: trani-flip-x;
 }
 
-@-webkit-keyframes trani-spring-x {
+@-webkit-keyframes trani-flip-x {
 	0% {
 		opacity: 0;
 		-webkit-transform: scale(0, 1);
 	}
 }
 
-@keyframes trani-spring-x {
+@keyframes trani-flip-x {
 	0% {
 		opacity: 0;
 		transform: scale(0, 1);
 	}
 }
 
-[trani~="mov-left"]{ /*function, can element*/
-	-webkit-animation-name: trani-mov-left;
-	animation-name: trani-mov-left;
+[trani~="f-right"]{ /*function, can element*/
+	-webkit-animation-name: trani-right;
+	animation-name: trani-right;
 }
 
-@-webkit-keyframes trani-mov-left {
+@-webkit-keyframes trani-right {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateX(-100%);
 	}
 }
 
-@keyframes trani-mov-left {
+@keyframes trani-right {
 	0% {
 		opacity: 0;
 		transform: translateX(-100%);
 	}
 }
 
-[trani~="mov-right"]{ /*function, can element*/
-	-webkit-animation-name: trani-mov-right;
-	animation-name: trani-mov-right;
+[trani~="f-left"]{ /*function, can element*/
+	-webkit-animation-name: trani-left;
+	animation-name: trani-left;
 }
 
-@-webkit-keyframes trani-mov-right {
+@-webkit-keyframes trani-left {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateX(100%);
 	}
 }
 
-@keyframes trani-mov-right {
+@keyframes trani-left {
 	0% {
 		opacity: 0;
 		transform: translateX(100%);
 	}
 }
 
-[trani~="mov-down"]{ /*function, can header & menu*/
-	-webkit-animation-name: trani-mov-down;
-	animation-name: trani-mov-down;
+[trani~="f-down"]{ /*function, can header & menu*/
+	-webkit-animation-name: trani-down;
+	animation-name: trani-down;
 }
 
-@-webkit-keyframes trani-mov-down {
+@-webkit-keyframes trani-down {
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(-50%);
 	}
 }
 
-@keyframes trani-mov-down {
+@keyframes trani-down {
 	0% {
 		opacity: 0;
 		transform: translateY(-50%);
+	}
+}
+
+[trani~="f-up"]{ /*function, can header & menu*/
+	-webkit-animation-name: trani-up;
+	animation-name: trani-up;
+}
+
+@-webkit-keyframes trani-up {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(50%);
+	}
+}
+
+@keyframes trani-up {
+	0% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+}
+
+[trani~="f-redshift"]{ /*function, can background-image*/
+	-webkit-animation-name: trani-redshift;
+	animation-name: trani-redshift;
+}
+
+@-webkit-keyframes trani-redshift {
+	0% {
+		-webkit-transform: scale(1.1, 1.1);
+	}
+}
+
+@keyframes trani-redshift {
+	0% {
+		-webkit-transform: scale(1.1, 1.1);
 	}
 }
